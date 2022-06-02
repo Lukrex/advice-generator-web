@@ -31,10 +31,10 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 1em;
-    box-shadow: 2em 2em 4em -0.8em rgba(0, 0, 0, 0.1);
+    box-shadow: 2em 2em 4em -0.8em rgba(0, 0, 0, 0.12);
 }
 .header {
-    font-size: 1em;
+    font-size: 0.9em;
     color: hsl(150, 100%, 66%);
     margin-top: 2em;
     letter-spacing: 0.25em;
@@ -56,6 +56,7 @@ body {
     height: 1em;
     width: 28em;
     margin-bottom: 5em;
+    transition: margin-bottom 0.5s ease-out;
 }
 .divider-img-mobile {
     display: none;
