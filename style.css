@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+* { font-family: 'Manrope', sans-serif; }
+.attribution { 
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.6em; 
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.attribution a { 
+    color: hsl(135, 70%, 36%); 
+    text-decoration: none;
+}
+body {
+    font-size: 16px;
+    font-weight: 800;
+    user-select: none;
+    background-color: hsl(218, 23%, 16%);
+}
+.card {
+    background-color: hsl(217, 19%, 24%);
+    height: 19em;
+    width: 32.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 2em 2em 4em -0.8em rgba(0, 0, 0, 0.1);
+}
+.header {
+    font-size: 1em;
+    color: hsl(150, 100%, 66%);
+    margin-top: 2em;
+    letter-spacing: 0.25em;
+    font-weight: 600;
+}
+.text-container {
+    height: 100%;
+    width: 80%;
+}
+.text {
+    font-size: 1.5em;
+    color: hsl(193, 38%, 86%);
+    text-align: center;
+    position: relative;
+    top: 28%;
+    transform: translate(0, -50%);
+}
+.divider-img, .divider-img-mobile {
+    height: 1em;
+    width: 28em;
+    margin-bottom: 5em;
+}
+.divider-img-mobile {
+    display: none;
+    height: 1.3em;
+    width: 24em;
+}
+.dice-btn { 
+    background-color: hsl(150, 100%, 66%);
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 2em -0.7em #000;
+    top: 17.25em;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+.dice-btn:hover {
+    box-shadow: 0 0 3em  hsl(150, 100%, 66%);
+}
+.dice-btn-click {
+    animation: click 0.5s ease-in-out;
+}
+.dice-img {
+    height: 1.5em;
+    width: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes click {
+    from, to { background-color: hsl(150, 100%, 66%); transform: scale(1) }
+    10% { background-color: hsl(150, 70%, 43%); transform: scale(0.9) }
+}
+
+@media screen and (max-width: 550px) {
+    body { font-size: 12px; }
+    .divider-img { display: none; }
+    .divider-img-mobile { display: block; }
+}
