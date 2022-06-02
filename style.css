@@ -31,7 +31,7 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 1em;
-    box-shadow: 2em 2em 4em -0.8em rgba(0, 0, 0, 0.12);
+    box-shadow: 2em 2em 4em -0.8em rgba(0, 0, 0, 0.15);
 }
 .header {
     font-size: 0.9em;
@@ -65,8 +65,8 @@ body {
 }
 .dice-btn { 
     background-color: hsl(150, 100%, 66%);
-    height: 3.5em;
-    width: 3.5em;
+    height: 4em;
+    width: 4em;
     border-radius: 50%;
     position: absolute;
     box-shadow: 0 0 2em -0.7em #000;
